@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move and Munchies</title>
+    <!--Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--Font Awesome-->
+    <script src="https://use.fontawesome.com/5f1f3cb4d3.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+    <!--firebase-->
+    <script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+    <script src="assets/js/geocomplete/jquery.geocomplete.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    
+  <div class="row jumbotron" id="landingTitle">
+    <h1>Movie and Munchies</h1>
+  </div><!--/jumbotron-->
+
+  <div class="row" id="results">
+    <div class="col-md-6 dinnerResult"></div>
+    <div class="col-md-6 movieResult"></div>
+  </div>
+
+  <div class="col-md-12 panel panel-default">
+    <div class="form-group row">
+        <label for="example-text-input" class="col-10 col-form-label">Pick Your location</label>
+        <div class="col-10">
+            <input class="form-control" id="location" type="text" placeholder="Enter address here">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="example-search-input" class="col-10 col-form-label">Mood/Movie Genre</label>
+        <div class="col-10">
+            <input class="form-control" type="input" id="moodGenre">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-email-input" class="col-10 col-form-label">Price Range</label>
+            <div class="col-10">
+                <input class="form-control" type="input" id="price">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-url-input" class="col-10 col-form-label">Food search term</label>
+            <div class="col-10">
+                <input class="form-control" type="input" id="foodType">
+            </div>
+        </div>
+        <input type="submit" class="btn btn-info" value="Submit Button" id="submit">
+  </div><!--/panel-->
+       
+  </div><!--/container-->
+  <script src="assets/js/logic.js"></script>
+</body>
+
+</html>
+
+
